@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
@@ -11,19 +12,47 @@
 <body>
     <header class="my-bg-darkg">
         <section>
-            <div class="container">
-                <div class="row justify-content-between py-3">
-                    <div class="col-5 col-lg-6 ">
+            <nav class="container">
+                <div class="row justify-content-between align-items-center py-3">
+                    <div class="col-5 col-lg-5 ">
                         <a class=" text-decoration-none text-white text-nowrap" href="http://"><b>START BOOTSTRAP</b></a>
                     </div>
-                    
-                    <div class="col-7 col-lg-6 row justify-content-end text-end">
-                        <a class="col-3 col-lg-2 text-decoration-none text-white" href="http://">ABOUT</a>
-                        <a class="col-4 col-lg-2 text-decoration-none text-white" href="http://">CONTACT</a>
-                        <a class="col-5 col-lg-2 text-decoration-none text-white" href="http://">PORTFOLIO</a>
+                    <div class="col-7 col-lg-4 row justify-content-end  navbar navbar-expand-lg">
+                        
+                        <button class="navbar-toggler mx-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"  style="width:100px; color: grey; border: 2px solid grey;">
+                            <span class="navbar-toggler-icon" style="filter: invert(100%);"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse col-8 text-end" id="navbarSupportedContent">
+                            <ul class="list-group justify-content-end my-2 aka">
+                              <li>
+                                <a class="text-decoration-none text-white col-4 mx-4" href="#">ABOUT</a>
+                              </li>
+                              <li>
+                                <a class="text-decoration-none text-white col-4 mx-4 " href="#">CONTACT</a>
+                              </li>
+                              <li>
+                                <a class="text-decoration-none text-white col-4 mx-4" href="#">PORTFOLIO</a>
+                              </li>  
+                            </ul>    
+                        </div>        
+                        
+                        <div class="col-1 col-lg-6 row justify-content-end text-end my-menu">
+                            <ul class="list-group list-group-horizontal justify-content-end">
+                                <li>
+                                    <a class="text-decoration-none text-white col-4 mx-4" href="#">ABOUT</a>
+                                </li>
+                                <li>
+                                    <a class="text-decoration-none text-white col-4 mx-4 " href="#">CONTACT</a>
+                                </li>
+                                <li>
+                                    <a class="text-decoration-none text-white col-4 mx-4" href="#">PORTFOLIO</a>
+                                </li>  
+                            </ul>  
+                        </div>
                     </div>
                 </div>
-            </div>
+            </nav>
         </section>
     </header>
 
@@ -32,17 +61,17 @@
             <div class="container">
                 <div class="row justify-content-center p-3">
                     <div class="col-12 col-lg-6 text-center">                         
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Image-not-found.png" alt="">     
+                        <img class="img-fluid" src="./img/avatar.svg" alt="">     
                     </div>
 
-                    <div class="col-10  text-center text-white">
-                        <h2 class="my-2 text-nowrap">START BOOSTRAP</h2>
-                        <div class="my-3">
-                            <hr style="display: inline-block; width: 10%;">
+                    <div class="col-10 row justify-content-center text-center text-white">
+                        <h2 class="my-2 col-8">START BOOSTRAP</h2>
+                        <div class="my-3 col-8">
+                            <hr style="display: inline-block; width: 10%;margin: 0.5rem ;">
                             <i class="fa-solid fa-star"></i>
-                            <hr style="display: inline-block; width: 10%;">
+                            <hr style="display: inline-block; width: 10%;margin: 0.5rem ;">
                         </div>
-                        <h6 class="mt-2">GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h6>
+                        <h6 class="mt-2 col-8">GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h6>
                     </div>
                 </div>
             </div>
@@ -50,36 +79,35 @@
 
         <section class="container my-4">
             <div class="row justify-content-center">
-                <div class="col-10 text-center">
-                    <h2>PORTFOLIO</h2>
-                    <div class="my-3">
-                        <hr style="display: inline-block; width: 10%;">
+                <div class="col-10 text-center row justify-content-center">
+                    <h2 class="col-8">PORTFOLIO</h2>
+                    <div class="my-3 col-8">
+                        <hr style="display: inline-block; width: 10%;margin: 0.5rem ;">
                         <i class="fa-solid fa-star"></i>
-                        <hr style="display: inline-block; width: 10%; ">
+                        <hr style="display: inline-block; width: 10%;margin: 0.5rem ; ">
                     </div>  
                 </div>
 
                 <div class="row justify-content-center my-5 text-center">
                     <div class="col-12 col-lg-4 p-3 col-sm-6 bg-card-1">
-                        <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Image-not-found.png" alt=""> 
+                        <img class="img-fluid" src="./img/cabin.png" alt=""> 
                     </div>
                     <div class="col-12 col-lg-4 p-3 col-sm-6 bg-card-2">
-                        <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Image-not-found.png" alt=""> 
+                        <img class="img-fluid" src="./img/cake.png" alt=""> 
                     </div>
                     <div class="col-12 col-lg-4 p-3 col-sm-6 bg-card-3">
-                        <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Image-not-found.png" alt=""> 
+                        <img class="img-fluid" src="./img/circus.png" alt=""> 
                     </div>
                     <div class="col-12 col-lg-4 p-3 col-sm-6 bg-card-4">
-                        <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Image-not-found.png" alt=""> 
+                        <img class="img-fluid" src="./img/game.png" alt=""> 
                     </div>
                     <div class="col-12 col-lg-4 p-3 col-sm-6 bg-card-5">
-                        <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Image-not-found.png" alt=""> 
+                        <img class="img-fluid" src="./img/safe.png" alt=""> 
                     </div>
                     <div class="col-12 col-lg-4 p-3 col-sm-6 bg-card-6">
-                        <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Image-not-found.png" alt=""> 
+                        <img class="img-fluid" src="./img/submarine.png" alt=""> 
                     </div>
                 </div>
-                
             </div> 
         </section>
 
@@ -88,9 +116,9 @@
                 <div class="text-center p-1">
                     <h2>ABOUT</h2>
                     <div class="my-3">
-                        <hr style="display: inline-block; width: 10%;">
+                        <hr style="display: inline-block; width: 10%; margin: 0.5rem ;">
                         <i class="fa-solid fa-star"></i>
-                        <hr style="display: inline-block; width: 10%; ">
+                        <hr style="display: inline-block; width: 10%; margin: 0.5rem ;">
                     </div>
                 </div>
                 <div class="row p-1">
@@ -115,41 +143,40 @@
                 <div class="text-center ">
                     <h2 class="my-3">CONTACT ME</h2>
                     <div class="my-3">
-                        <hr style="display: inline-block; width: 10%;">
+                        <hr style="display: inline-block; width: 10%; margin: 0.5rem ;">
                         <i class="fa-solid fa-star"></i>
-                        <hr style="display: inline-block; width: 10%; ">
+                        <hr style="display: inline-block; width: 10%; margin: 0.5rem ;">
                     </div>
                 </div>
-                <h4>Name
-                    <hr>
-                </h4>
-                <h4>Email Address
-                    <hr>
-                </h4>
-                <h4>Phone Number
-                    <hr>
-                </h4>
-                <h4>Message  
-                </h4>
-                <hr>
-            </div>
-            <div style="height: 200px;"></div>
-
-            <div class="container px-5  my-5">
-                <hr>
-                <button class="btn btn-outline-light" style="background-color: #1abc9c ;">Send</button>
-            </div>
+                <form class="px-5" action="#">
+                    <div>
+                        <input type="text" placeholder="Name" required>
+                        <input type="text" placeholder="Email Address" required>
+                        <input type="text" placeholder="Phone Number" required>
+                        <textarea name="Message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    </div>
+                     
+                    <div>
+                        <input type="checkbox" name="Accetto la politica e privacy" placeholder="Accetto la politica e privacy"  id="" style="display: inline; width: auto;" required>
+                        <span>
+                            Accetto la politica e privacy
+                        </span>
+                        <br>                      
+                        <input type="submit" value="Send" class="btn btn-outline-light" style="background-color: #1abc9c ; width: 100px;">
+                    </div>
+                </form>
+            </div>           
         </section>
     </main>
 
     <footer class="my-bg-darkf text-white  " >
         <section class="container">
-            <div class="row justify-content-between">
-                <div class="col-4 col-lg-3 text-start">
+            <div class="row text-center">
+                <div class="col-12 col-md-4">
                     <h4>LOCATION</h4>
                     <h5 >2215 Jhon Daniel Drive Clark, MO 54243</h5>
                 </div>
-                <div class="col-4 col-lg-3 text-center">
+                <div class="col-12 col-md-4">
                     <h4>AROUND THE WEB</h4>
                     <h5>
                         <i class="fa-brands fa-facebook-f"></i>
@@ -158,7 +185,7 @@
                         <i class="fa-brands fa-linkedin-in"></i>
                     </h5>
                 </div>
-                <div class="col-4 col-lg-3 text-end">
+                <div class="col-12 col-md-4">
                     <h4>ABOUT FREELANCER</h4>
                     <h5>Frelance is a free to use, open source Bootstrap theme created by <a style="color: #1abc9c;"  href="http://">Start Boostrap</a></h5>
                 </div>
@@ -167,7 +194,7 @@
 
         <section class="my-bg-footer py-3">
             <div class="container text-center">
-                <h5>Copyright Your Website 2019</h5>
+                <h5>Copyright &#169; Your Website 2019</h5>
             </div>
         </section>
     </footer>
